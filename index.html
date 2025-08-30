@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Felipe Marin" />
+    <meta
+      name="description"
+      content="Portfolio of Juan Felipe Marin Molina, a frontend developer and UI designer. Explore recent projects, skills, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Felipe Marin, portfolio, frontend developer, UI designer, web developer, HTML, CSS, JavaScript, projects, Medellin, Colombia"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Portfolio Web | Felipe Marin" />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Juan Felipe Marin Molina, frontend developer and UI designer. Discover projects, skills, and contact details."
+    />
+    <meta
+      property="og:image"
+      content="https://your-domain.com/imgs/img-felipe-marin.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio Web | Felipe Marin" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Juan Felipe Marin Molina, frontend developer and UI designer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/imgs/img-felipe-marin.png"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--  Favicon -->
+    <link
+      rel="shortcut icon"
+      href="imgs/img-felipe-marin.png"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- CDN AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Portfolio Web | Felipe Marin</title>
+  </head>
+  <body>
+    <!-- Loader Start -->
+    <div id="loader">
+      <div class="loader__spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="loader__text">Felipe Marin Portfolio</div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Particles Efect -->
+    <div id="particles-js"></div>
+
+    <!-- Section Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__container container">
+          <div class="nav__logo">
+            <h2 class="nav__logo--text">Felipe Marin</h2>
+          </div>
+          
+          <i class="bi bi-list" id="hamburguer__menu"></i>
+          
+          <!-- Navigation Menu -->
+          <div class="right__nav">
+            <ul class="nav__links">
+              <li class="nav__link"><a id="nav__link" href="#about__me">About Me</a></li>
+              <li class="nav__link"><a id="nav__link" href="#skills">Skills</a></li>
+              <li class="nav__link"><a id="nav__link" href="#projects">Projects</a></li>
+              <li class="nav__link"><a id="nav__link" href="#contact">Contact</a></li>
+              <li>
+              </li>
+            </ul>
+  
+            <div class="icon__container" id="icon__theme"></div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section About Me -->
+      <section class="about__me container" id="about__me">
+        <div class="about__me--texts">
+          <h1 class="about__me--title">
+            Frontend Developer & <span>UI Designer</span>
+          </h1>
+          <p class="about__me--description">
+            Hello! My name is <span>Juan Felipe Marin Molina</span> from Riwi
+            and I am a Junior software developer, I like to create completely
+            climbing and amazing websites and applications, I am currently
+            focused on web development with technologies such as HTML, CSS and
+            JS.
+          </p>
+          <a class="about__me--button" href="#contact"> Contact Me! </a>
+        </div>
+        <div class="about__me--image">
+          <img src="./imgs/img-felipe-marin.png" alt="Imagen Felipe Marin" />
+        </div>
+      </section>
+    </header>
+
+    <!-- Section Skills -->
+    <section class="skills container" id="skills">
+      <h2 class="skills__title title">
+        Skills and technologies that management
+      </h2>
+
+      <!-- Skills List -->
+      <ul class="skills__list">
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/html-5.png" alt="Icono HTML5" />
+          HTML
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/css-3.png" alt="Icono CSS3" />
+          CSS
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/logo-js.png" alt="Icono JavaScript" />
+          JavaScript
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/logo-python.png" alt="Icono Python" />
+          Python
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/logo-git.png" alt="Icono Git" />
+          Git
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+        >
+          <img src="./imgs/github.png" alt="Icono GitHub" />
+          GitHub
+        </li>
+        <li
+          class="skill"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0" 
+        >
+          <img src="./imgs/MySQL-Logo.wine.png" alt="Icono GitHub" />
+          MySQL
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section Projects -->
+    <section class="projects container" id="projects">
+      <!-- Info Projects -->
+      <div class="projects__texts">
+        <h2 class="projects__title title">Recent projects</h2>
+
+        <p class="projects__description">
+          I will show you some of the most recent projects than I have developed
+          using HTML, CSS and JavaScript technologies, do you have a project in
+          mind?, <a href="#contact">Contact Me!</a>
+        </p>
+      </div>
+
+      <!-- Projects -->
+      <div class="container__projects">
+        <div class="book box" data-aos="fade-down-right" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A pixel-perfect clone of Mercado Libre’s homepage, built using CSS
+              Grid and HTML. This project demonstrates advanced layout
+              techniques and responsive design.
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="Logo HTML5" />
+              <img src="./imgs/css-3.png" alt="Logo CSS3" />
+            </div>
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://homepage-mercadolibre.netlify.app/"
+                target="_blank"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Homepage Mercado Libre</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="book box" data-aos="flip-up" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A modern landing page for a fictional wellness company. Features
+              clean UI, smooth scrolling, and interactive elements using HTML,
+              CSS, and JavaScript.
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="Logo HTML5" />
+              <img src="./imgs/css-3.png" alt="Logo CSS3" />
+              <img src="./imgs/logo-js.png" alt="Logo JavaScript" />
+            </div>
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://positivus-free-page-pid.netlify.app/"
+                target="_blank clas"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Positivus Free Page</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="book box" data-aos="fade-down-left" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A landing page for a social media startup. Focuses on
+              accessibility, mobile responsiveness, and engaging call-to-action
+              sections.
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="Logo HTML5" />
+              <img src="./imgs/css-3.png" alt="Logo CSS3" />
+              <img src="./imgs/logo-js.png" alt="Logo JavaScript" />
+            </div>
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://landing-page-chirp-programaconpid.netlify.app/"
+                target="_blank"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Landing Page Chirp</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="book box" data-aos="fade-up-right" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A product landing page for a clipboard app. Highlights product
+              features with a minimalist design and clear visual hierarchy.
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="Logo HTML5" />
+              <img src="./imgs/css-3.png" alt="Logo CSS3" />
+            </div>
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://clipboard-landingpage-pid.netlify.app/"
+                target="_blank"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Clipboard Landing Page</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="book box" data-aos="flip-down" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A stylish data storage component UI, inspired by Fylo. Showcases
+              creative use of gradients, cards, and progress bars.
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="Logo HTML5" />
+              <img src="./imgs/css-3.png" alt="Logo CSS3" />
+            </div>
+
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://fylo-data-storage-component-pid.netlify.app/"
+                target="_blank"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Filo Data Component</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="book box" data-aos="fade-up-left" data-aos-delay="200">
+          <div class="book__content">
+            <h3 class="book__content--title">Project Description</h3>
+
+            <p class="book__content--description">
+              A responsive testimonial grid layout. Uses CSS Grid to display
+              user feedback in an attractive and organized way
+            </p>
+
+            <h3 class="technologies__title">technologies used</h3>
+            <div class="book__content--technologies">
+              <img src="./imgs/html-5.png" alt="" />
+              <img src="./imgs/css-3.png" alt="" />
+            </div>
+
+            <!-- From Uiverse.io by Web-Potato -->
+            <button class="book__content--btn">
+              <a
+                href="https://testimonial-grid-section-pid.netlify.app/"
+                target="_blank"
+              >
+                View Website
+              </a>
+            </button>
+          </div>
+          <div class="cover">
+            <h2>Testimonial Grid Section</h2>
+
+            <span class="cover__span"
+              >See the details <i class="bi bi-hand-index-thumb-fill"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container" id="contact">
+      <h2 class="contact__title title">Send me a message</h2>
+
+      <!-- Contact Info -->
+      <div class="container__contact">
+        <div class="contact__info" data-aos="zoom-out-right">
+          <h2 class="contact__info--title title">Getting in touch is too easy!</h2>
+
+          <p class="contact__info--addres">
+            Street 48C Sur #39a - 165,
+            <br />
+            Medellin, Colombia
+          </p>
+
+          <p class="contact__info--phone">+57 305-484-4782</p>
+
+          <a
+            class="contact__info--email"
+            href="mailto: juanfelipemm2004@gmail.com"
+          >
+            juanfelipemm2004@gmail.com
+          </a>
+
+          <div class="contact__info--social-media">
+            <a class="contact__link" href="https://www.facebook.com/juanfelipe.marinmolina.39/" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="contact__link" href="https://www.instagram.com/_felipemarin02/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="contact__link" href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="contact__link" href="https://www.tiktok.com/@programaconpid" target="_blank">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form" data-aos="zoom-out-left">
+          <form
+            method="post"
+            id="form"
+          >
+            <div class="form__group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name..."
+                id="name"
+                class="input__field"
+              />
+              <p class="errorMessage"></p>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email..."
+                id="email"
+                class="input__field"
+              />
+              <p class="errorMessage"></p>
+
+              <textarea
+                name="message"
+                rows="8"
+                cols="10"
+                placeholder="Write your message... (Optional)"
+                id="message"
+              ></textarea>
+
+            </div>
+
+            <input id="input__submit" type="submit" value="Enviar formulario" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="copy">&#169; 2025 | Felipe Marin</span>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script type="module" src="./main.js"></script>
+    <!-- CDN Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Particles JS File -->
+    <script src="./js/particles.min.js"></script>
+    <!-- CDN AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
