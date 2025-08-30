@@ -1,23 +1,25 @@
-import express from 'express';
-import { connection } from './db.js';
+import express from "express";
+import { pool } from "./db.js";
 
 const router = express.Router();
 
 // POST Route
-router.post("/post", (req, res) => {
+router.post("/post", async (req, res) => {
   const { name, email, message } = req.body;
 
   const sql = "INSERT INTO users (name, email, message) VALUES (?, ?, ?)";
-  connection.query(sql, [name, email, message], (err, result) => {
-    if (err) {
-      console.error("Error al insertar:", err);
-      return res.status(500).json({ error: "Error saving user" });
-    }
+
+  try {
+    const [result] = await pool.query(sql, [name, email, message]);
 
     res.json({
       message: "User saved successfully",
+      insertedId: result.insertId,
     });
-  });
+  } catch (err) {
+    console.error("Error inserting:", err);
+    res.status(500).json({ error: "Error saving user" });
+  }
 });
 
 export default router;
