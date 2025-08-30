@@ -5,7 +5,7 @@ const isLocalhost = ["localhost", "127.0.0.1"].includes(window.location.hostname
 
 const API_URL = isLocalhost
   ? "http://localhost:3000"              
-  : "https://mi-backend.onrender.com";  
+  : "https://personal-portfolio-i7vv.onrender.com";  
 
 // Loader hide on page load
 window.addEventListener("load", () => {
