@@ -9,6 +9,7 @@
   --grey: #5b6d82;
   --soft-black: #050614;
   --white: #fff;
+  --course-color: #94a6b8;
   --font-montserrat: "Montserrat";
   --font-poetsen-one: "Poetsen One";
 }
@@ -584,6 +585,94 @@ input, textarea {
   -webkit-transform: rotatey(-83deg);
   -ms-transform: rotatey(-83deg);
   transform: rotatey(-83deg);
+}
+
+/* -------------------- */
+
+/* -- COURSES STYLES -- */
+
+/* -------------------- */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.courses__description {
+  color: var(--grey);
+  font-size: clamp(18px, 4vw, 22px);
+  line-height: 1.5;
+}
+
+.container__courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  place-items: center;
+}
+
+.courses__box {
+  background-color: #171c26;
+  padding: 30px;
+  border-radius: .6rem;
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--soft-blue);
+  transition: scale 500ms ease;
+}
+
+.courses__box:hover {
+  scale: .9;
+}
+
+.courses__box--header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bx-medal-star-alt {
+  font-size: 2rem;
+  color: var(--soft-blue);
+  background-color: #66d9ff1a;
+  padding: 10px 5px;
+  border-radius: .6rem;
+  border: 1px solid var(--soft-blue);
+}
+
+.courses__box--bootcamp,
+.courses__box--date {
+  color: var(--course-color);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.courses__box--description {
+  color: var(--course-color);
+}
+
+.courses__box--cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  color: var(--soft-black);
+  text-align: center;
+  padding: 15px 0;
+  background-color: var(--soft-blue);
+  border-radius: .6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+
+.courses__box--cta:hover {
+  transform: rotate(-3deg);
+  box-shadow: 0 0 15px var(--soft-blue);
 }
 
 /* -------------------- */
